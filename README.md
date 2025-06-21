@@ -1,19 +1,13 @@
-# Pre-commit Hooks
+# Commit Hooks
 
-A collection of pre-commit hooks to maintain code quality and consistency across your projects.
-
-## What is this?
-
-This repository contains a pre-commit configuration that automatically runs code quality checks and formatting before each commit. It helps ensure that all committed code follows consistent standards and best practices.
+A collection of commit hooks to maintain code quality and consistency across your projects.
 
 ## Quick Start
 
-This repository is set up as a template with pre-commit already configured.
-
 ### Clone this repository
 ```shell
-git clone git@github.com:Siiir/pre-commit-hooks.git
-cd pre-commit-hooks
+git clone git@github.com:Siiir/commit-hooks.git
+cd commit-hooks
 ```
 
 ### Create Python3 virtual environment
