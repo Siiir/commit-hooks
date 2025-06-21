@@ -28,12 +28,21 @@ wheels/
 *.egg
 MANIFEST
 
+# Rust
+/target/
+
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+# IDE – RustRover
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
 
 # OS
 .DS_Store
