@@ -22,9 +22,11 @@ python3 -m venv venv/
 ./venv/bin/pip install -r requirements.txt
 ```
 
-### Install the git hooks
-```shell
-./venv/bin/pre-commit
+### Install the git hooks (Linux script)
+```bash
+./venv/bin/activate
+pre-commit install
+pre-commit install --hook-type commit-msg
 ```
 
 ## Contributing
