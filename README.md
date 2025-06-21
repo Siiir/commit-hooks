@@ -18,7 +18,7 @@ python3 -m venv venv/
 
 ### Install the git hooks (Linux script)
 ```bash
-./venv/bin/activate
+source ./venv/bin/activate
 pre-commit install
 pre-commit install --hook-type commit-msg
 ```
