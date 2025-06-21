@@ -15,30 +15,30 @@ repos:
 
   - repo: local
     hooks:
-      - id: cargo-fmt
+      - id: fix-fmt
         name: cargo fmt
         entry: cargo fmt --all
         language: system
         types: [rust]
         pass_filenames: false
 
-      - id: cargo-check
+      - id: check-compilation
         name: cargo check
         entry: cargo check
         language: system
         types: [rust]
         pass_filenames: false
 
-      - id: cargo-test
+      - id: test-code
         name: cargo test
-        entry: cargo test --all-targets --doc
+        entry: cargo test --all-targets
         language: system
         types: [rust]
         pass_filenames: false
 
-      - id: cargo-rustdoc
-        name: cargo rustdoc
-        entry: cargo rustdoc -- -D warnings
+      - id: check-docs
+        name: "Check docs"
+        entry: bash -c "cargo test --doc && cargo rustdoc -- -D warnings"
         language: system
         types: [rust]
         pass_filenames: false
