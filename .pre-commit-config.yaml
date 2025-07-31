@@ -3,6 +3,7 @@ repos:
     rev: v4.5.0
     hooks:
       - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]   # ← preserves two spaces in *.md
       - id: end-of-file-fixer
         exclude: '\.rs$'
       - id: check-added-large-files
