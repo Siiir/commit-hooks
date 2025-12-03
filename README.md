@@ -1,6 +1,7 @@
 # Commit Hooks
 
-A collection of commit hooks to maintain code quality and consistency across your projects.
+A collection of commit hooks to maintain code quality and consistency across your projects.  
+This repository branch is tailored for **Unity** projects.
 
 ## Quick Start
 
